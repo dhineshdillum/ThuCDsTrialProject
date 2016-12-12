@@ -1,0 +1,27 @@
+<xref>
+  <whenMade>1481295616483</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description></description>
+      <narrative></narrative>
+      <name>TrialTest.story</name>
+      <path>chp/stories/Capabilities/TrialTest.story</path>
+      <html>chp.stories.Capabilities.TrialTest.html</html>
+      <meta></meta>
+      <scenarios>Scenario:scenario description
+Given User is on the [site]
+When the site Title is [title]
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1481295609145</started>
+      <duration>5333</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

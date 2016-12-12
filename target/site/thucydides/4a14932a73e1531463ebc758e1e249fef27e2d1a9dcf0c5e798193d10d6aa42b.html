@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Test</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/core.css"/>
+    <link rel="stylesheet" type="text/css" href="jqplot/jquery.jqplot.min.css"/>
+
+    <script src="scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="scripts/imgpreview.full.jquery.js" type="text/javascript"></script>
+
+    <link type="text/css" href="jqueryui/css/start/jquery-ui-1.8.18.custom.css" rel="Stylesheet"/>
+    <script type="text/javascript" src="jqueryui/js/jquery-ui-1.8.18.custom.min.js"></script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/logo.jpg" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+<div id="contenttop">
+    <div class="middlebg">
+        <span class="bluetext"><a href="index.html"
+                                  class="bluetext">Home</a> > Test </span>
+    </div>
+    <div class="rightbg"></div>
+</div>
+
+<div class="clr"></div>
+
+<!--/* starts second table*/-->
+<div class="menu">
+    <ul>
+        <li><a href="index.html" class="current">Overall Test Results</a></li>
+        <li><a href="capabilities.html" >Requirements</a></li>
+    </ul>
+    <span class="date-and-time">Report generated 09-12-2016 14:35</span>
+    <br style="clear:left"/>
+</div>
+<div class="clr"></div>
+
+<div id="contentbody">
+    <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/pending.png" width="25" height="25"/>
+                </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="pending-color">Test<span
+                        class="related-issue-title"></span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span
+                        class="greentext">0s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div>
+                            <h3>Story: Trial Test</h3>
+
+                            <div class="requirementNarrativeTitle">
+                            
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="fe9cd873168465e32a6d21c95697b7425eb4265dc26e726512c737aa54b6a5da.html">Trial Test (story)</a>
+                        <a class="tagLink" href="5f2b01a7c4ca7e6459f7a828de87e6c27c7f5ed0f924b64b22f12bcbf1833aed.html">Trial Test (story)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="clr"></div>
+
+
+<div id="beforetable"></div>
+
+
+
+    <div id="tablecontents">
+        <div>
+            <table class="step-table">
+                <tr class="step-titles">
+                    <th width="65">&nbsp;
+                    </th>
+                    <th width="755" class="greentext">Steps</th>
+                        <th width="120" class="greentext">Screenshot</th>
+                    <th width="100" class="greentext">Outcome</th>
+                    <th width="75" class="greentext">Duration</th>
+                </tr>
+                <tr class="step-table-separator">
+                    <td colspan="5"></td>
+                </tr>
+                    <tr class="test-PENDING">
+                        <td width="60" class="step-icon">
+                            <a name="0"/>
+                                <img style="margin-left: 20px; margin-right: 5px;"
+                                     src="images/pending.png" class="top-level-icon"/>
+                        </td>
+                        <td>
+                            <div class="step-description">
+                                <span class="top-level-step">!--<br>!--<br>!--Examples:<br><table class='embedded'><thead><th>!--</th><th>site</th><th>title</th></thead><tbody><tr><td>!--</td><td>BBC</td><td>BBC - Home</td></tr></tbody></table></span>
+                            </div>
+                        </td>
+                            <td width="100" class="PENDING-text">
+                                    <a href="4a14932a73e1531463ebc758e1e249fef27e2d1a9dcf0c5e798193d10d6aa42b_screenshots.html#screenshots?screenshot=0">
+                                        <img src="180b292881457100625cace4d4146ee6_NONE.png"
+                                             class="screenshot"
+                                             width="48" height="48"/>
+                                    </a>
+                            </td>
+                        <td width="100"><span class="top-level-step">PENDING</span></td>
+                        <td width="100"><span class="top-level-step">0.26s</span></td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Thucydides version 0.9.269 - Build UNKNOWN</span>
+</div>
+
+
+<script type="text/javascript">
+    function toggleDiv(divId) {
+        $("#" + divId).toggle();
+        var imgsrc = $(".img" + divId).attr('src');
+        if (imgsrc == 'images/plus.png') {
+            $(".img" + divId).attr("src", function () {
+                return "images/minus.png";
+            });
+
+        }
+        else {
+            $(".img" + divId).attr("src", function () {
+                return "images/plus.png";
+            });
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    $('.example-table table').dataTable({
+        "aaSorting": [
+            [ 1, "asc" ]
+        ],
+        "bJQueryUI": true,
+        "iDisplayLength": 25,
+        "sScrollX": "100%",
+        "sScrollXInner": "100%",
+        "bScrollCollapse": true
+    });
+</script>
+
+<script type="text/javascript">
+    //<![CDATA[
+
+    function ($) {
+        $('a').imgPreview({
+            imgCSS: {
+                width: '500px'
+            },
+            distanceFromCursor: {top: 10, left: -200}
+        });
+    }
+    //]]>
+</script>
+<div id="imgPreviewContainer" style="position: absolute; top: 612px; left: 355px; display: none; " class=""><img
+        src="" style="display: none; "></div>
+<div id="imgPreviewContainer2" style="position: absolute; top: 925px; left: 320px; display: none; " class="">
+    <img style="width: 200px; display: none; " src=""></div>
+<div id="imgPreviewWithStyles" style="position: absolute; top: 1272px; left: 321px; display: none; " class="">
+    <img style="height: 200px; opacity: 1; display: none; " src=""></div>
+<div id="imgPreviewWithStyles2" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+<div id="imgPreviewWithStyles3" style="display: none; position: absolute; "><img style="height: 200px; "></div>
+
+</body>
+</html>

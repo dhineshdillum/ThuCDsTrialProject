@@ -1,0 +1,36 @@
+<acceptance-test-run title="scenario description" name="scenario description" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5152" timestamp="2016-12-09T15:00:09.191Z">
+  <user-story id="TrialTest" name="Trial test" path="chp/stories/Capabilities/TrialTest.story"/>
+  <tags>
+    <tag name="Capabilities/Trial test" type="story"/>
+    <tag name="Trial test" type="story"/>
+  </tags>
+  <examples>
+    <datasets>
+      <dataset startRow="0" rowCount="0"/>
+    </datasets>
+    <headers>
+      <header>site</header>
+      <header>title</header>
+    </headers>
+    <rows>
+      <row result="SUCCESS">
+        <value>BBC</value>
+        <value>BBC - Home</value>
+      </row>
+    </rows>
+  </examples>
+  <test-group name="[1] {site=BBC, title=BBC - Home}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4422">
+      <screenshots>
+        <screenshot image="8a7d6a88ce425722bc898dfa49b5aae2_NONE.png"/>
+      </screenshots>
+      <description>Given User is on the [site]</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="658">
+      <screenshots>
+        <screenshot image="8a7d6a88ce425722bc898dfa49b5aae2_NONE.png"/>
+      </screenshots>
+      <description>When the site Title is [title]</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

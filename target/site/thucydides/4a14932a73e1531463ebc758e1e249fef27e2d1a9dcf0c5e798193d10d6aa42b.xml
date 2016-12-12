@@ -1,0 +1,17 @@
+<acceptance-test-run title="Test" name="Test" steps="1" successful="0" failures="0" skipped="0" ignored="0" pending="1" annotated-result="PENDING" result="PENDING" duration="255" timestamp="2016-12-09T14:35:03.362Z">
+  <user-story id="TrialTest" name="Trial test" path="chp/stories/Capabilities/TrialTest.story"/>
+  <tags>
+    <tag name="Capabilities/Trial test" type="story"/>
+    <tag name="Trial test" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="255">
+    <screenshots>
+      <screenshot image="180b292881457100625cace4d4146ee6_NONE.png"/>
+    </screenshots>
+    <description>!--
+!--
+!--Examples:
+!--|site   |title     |
+!--|BBC    |BBC - Home|</description>
+  </test-step>
+</acceptance-test-run>

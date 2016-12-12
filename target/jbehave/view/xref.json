@@ -1,0 +1,22 @@
+{"xref": {
+  "whenMade": 1481295616483,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "TrialTest.story",
+      "path": "chp/stories/Capabilities/TrialTest.story",
+      "html": "chp.stories.Capabilities.TrialTest.html",
+      "meta": "",
+      "scenarios": "Scenario:scenario description\u000aGiven User is on the [site]\u000aWhen the site Title is [title]\u000a\u000a\u000a",
+      "passed": true,
+      "pending": false,
+      "started": 1481295609145,
+      "duration": 5333
+    }
+  ],
+  "stepMatches": []
+}}

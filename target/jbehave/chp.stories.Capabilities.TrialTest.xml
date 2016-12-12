@@ -1,0 +1,16 @@
+<story path="chp/stories/Capabilities/TrialTest.story" title="">
+<scenario keyword="Scenario:" title="scenario description">
+<examples keyword="Examples:">
+<step>Given User is on the [site]</step>
+<step>When the site Title is [title]</step>
+<parameters>
+<names><name>site</name><name>title</name></names>
+<values><value>BBC</value><value>BBC - Home</value></values>
+</parameters>
+
+<example keyword="Example:">{site=BBC, title=BBC - Home}</example>
+<step outcome="successful">Given User is on the [site]</step>
+<step outcome="successful">When the site Title is [title]</step>
+</examples>
+</scenario>
+</story>
