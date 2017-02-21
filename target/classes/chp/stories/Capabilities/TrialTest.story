@@ -2,12 +2,10 @@ Meta:
 
 Narrative:
 
-Scenario: scenario description
-Given User is on the [site]
-When the site Title is [title]
+Scenario: Email Test
+
+Given user creates a draft message email with plain text
 
 Examples:
-|site   |title     |
-|BBC    |BBC - Home|
-
-
+|site   |attachment|
+|Etsy   |src/main/resources/uploadFile.jpg	|

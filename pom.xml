@@ -13,6 +13,13 @@
         <thucydides.version>0.9.269</thucydides.version>
         <thucydides.jbehave.version>0.9.275</thucydides.jbehave.version>
         <webdriver.driver>firefox</webdriver.driver>
+        <serenity.version>1.2.1-rc.6</serenity.version>
+        <serenity-browse-the-web.version>1.1.19</serenity-browse-the-web.version>
+        <serenity-jira.version>1.1.1</serenity-jira.version>
+        <serenity-journey.version>1.2.1-rc.6</serenity-journey.version>
+        <serenity-maven-plugin.version>1.2.1-rc.6</serenity-maven-plugin.version>
+        <gson.version>2.3.1</gson.version>
+        <guava.version>18.0</guava.version>
     </properties>
 
     <dependencies>
@@ -28,27 +35,92 @@
             <artifactId>thucydides-jbehave-plugin</artifactId>
             <version>${thucydides.jbehave.version}</version>
         </dependency>
-
         <dependency>
             <groupId>net.thucydides</groupId>
             <artifactId>thucydides-junit</artifactId>
             <version>${thucydides.version}</version>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.8</version>
         </dependency>
 
+
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+            <version>${serenity.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>net.sourceforge.htmlunit</groupId>
+                    <artifactId>htmlunit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-jira-plugin</artifactId>
+            <version>${serenity-jira.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-screenplay</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-screenplay-webdriver</artifactId>
+            <version>${serenity.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.google.api-client</groupId>
+            <artifactId>google-api-client</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.oauth-client</groupId>
+            <artifactId>google-oauth-client-jetty</artifactId>
+            <version>1.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.apis</groupId>
+            <artifactId>google-api-services-gmail</artifactId>
+            <version>v1-rev53-1.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4</version>
+        </dependency>
     </dependencies>
 
     <build>
